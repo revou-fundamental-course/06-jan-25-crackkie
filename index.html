@@ -18,7 +18,7 @@
              <div class="logo">Portofolio</div> <!-- logo -->
              <nav id="navMenu">
                 <ul>
-                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#service">Service</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -32,31 +32,41 @@
         <main>
 
     <!-- Section Hero -->
-             <section id="hero">
+             <section id="home">
                     <header>
                         <h1>Hallo <span id="greeting-user">User</span>,</h1>
-                        <h2>Welcome to my website</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, sed!</p>
+                        <h2>Let’s Build Your Dream Web Page!</h2>
+                        <p>I am a web developer and web designer. I can help you create your own website.</p>
+                        <a class="cta-button" href="#contact">Order Now</a>
                     </header>
-                    <div class="baner">
-                        <!-- baner img -->1
-                </div>
+                    <div class="baner" id="baner">
+                        <!-- baner img -->
+                        <!-- <img src="./asets/img/slide1.webp" alt=""> -->
+                    </div>
             </section>
 
     <!-- Section About -->
-            <section id="#about">
+            <section id="about" class="about-section">
                 <header>
-                    <!-- Title -->
+                    <h1>About</h1>
                 </header>
-                <div class="content about">
-                    <!-- content -->
+                <!-- content -->
+                <div class="about-container">
+                    <div class="profile">
+                        <p>Hello! 👋
+                            Saya Ahmad Riyadi, seorang web developer pemula yang memulai perjalanan di dunia pengembangan web pada tahun 2025 setelah memutuskan untuk beralih karir. Dengan minat besar pada teknologi, saya fokus mempelajari HTML, CSS, dan JavaScript untuk membangun website yang interaktif dan menarik.
+                            Sebelumnya, saya pernah belajar pemrograman, yang menjadi dasar pemahaman logika dan struktur kode saya.</p>
+                    </div>
+                    <div class="about"></div>
                 </div>
+                
             </section>
 
     <!-- Section Service -->
-            <section id="#service">
+            <section id="service" class="service-section">
                 <header>
                     <!-- Title -->
+                     <h1>Service</h1>
                 </header>
                 <div class="content service">
                     <!-- content -->
@@ -64,12 +74,48 @@
             </section>
 
     <!-- Section Contact -->
-            <section id="contact">
+            <section id="contact" class="contact-section">
                 <header>
                     <!-- Title -->
+                    <h1>Contact</h1>
                 </header>
-                <div class="content contact">
+                <div class="alert" id="alert"></div>
+                <div class="contact-container">
                     <!-- content -->
+                    <div class="form-box">
+                        <h1>Form Box</h1>
+                        <form>
+                            <label for="fname">Nama :</label>
+                            <input type="text" id="fname" name="fname"><br>
+
+                            <label for="fbirth">Date of birth :</label>
+                            <input type="date" id="fbirth" name="fbirth" > <br>
+
+                            <p>Gender :</p>
+                            <input type="radio" id="genderMale" name="gender" >
+                            <label for="genderMale">Male</label>
+                            <input type="radio" id="genderFemale" name="female">
+                            <label for="genderFemale">Female</label><br>
+
+
+                            <label for="message">Message :</label>
+                            <textarea name="message" id="message">Message</textarea><br>
+                            <button type="button" id="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="message-box">
+                        <h1>Message Box</h1>
+                        <p id="time">12.00</p>
+                        <div class="message-display">
+                            <p>Name : <span id="name-message"></span></p>
+                            <p>Date of birth : <spann id="birth-message"></spann></p>
+                            <p>Gender : <span id="gender-message"></span></p>
+                        </div>
+                        <div class="message-display">
+                            <p>Message : </p><br>
+                            <p><span id="message-container"></span></p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
