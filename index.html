@@ -37,7 +37,7 @@
                         <h1>Hallo <span id="greeting-user">User</span>,</h1>
                         <h2>Let’s Build Your Dream Web Page!</h2>
                         <p>I am a web developer and web designer. I can help you create your own website.</p>
-                        <a class="cta-button" href="#contact">Order Now</a>
+                        <a class="cta-button" href="#contact">Let’s Talk!</a>
                     </header>
                     <div class="baner" id="baner">
                         <!-- baner img -->
@@ -53,9 +53,9 @@
                 <!-- content -->
                 <div class="about-container">
                     <div class="profile">
-                        <p>Hello! 👋
-                            Saya Ahmad Riyadi, seorang web developer pemula yang memulai perjalanan di dunia pengembangan web pada tahun 2025 setelah memutuskan untuk beralih karir. Dengan minat besar pada teknologi, saya fokus mempelajari HTML, CSS, dan JavaScript untuk membangun website yang interaktif dan menarik.
-                            Sebelumnya, saya pernah belajar pemrograman, yang menjadi dasar pemahaman logika dan struktur kode saya.</p>
+                        <div class="img"></div>
+                        <p>Hello! 
+                            I am Ahmad Riyadi, a beginner web developer who started his journey in the world of web development this year after deciding to change careers. With a great interest in technology, I focused on learning HTML, CSS, and JavaScript to build interactive and attractive websites.                        <p>
                     </div>
                     <div class="about"></div>
                 </div>
@@ -80,6 +80,7 @@
                     <h1>Contact</h1>
                 </header>
                 <div class="alert" id="alert"></div>
+                <div class="doneNotify" id="doneNotify"></div>
                 <div class="contact-container">
                     <!-- content -->
                     <div class="form-box">
@@ -94,25 +95,25 @@
                             <p>Gender :</p>
                             <input type="radio" id="genderMale" name="gender" >
                             <label for="genderMale">Male</label>
-                            <input type="radio" id="genderFemale" name="female">
+                            <input type="radio" id="genderFemale" name="gender">
                             <label for="genderFemale">Female</label><br>
 
 
                             <label for="message">Message :</label>
-                            <textarea name="message" id="message">Message</textarea><br>
+                            <textarea name="message" id="message"></textarea><br>
                             <button type="button" id="submit">Submit</button>
                         </form>
                     </div>
                     <div class="message-box">
                         <h1>Message Box</h1>
-                        <p id="time">12.00</p>
+                        <div id="time"></div>
                         <div class="message-display">
                             <p>Name : <span id="name-message"></span></p>
                             <p>Date of birth : <spann id="birth-message"></spann></p>
                             <p>Gender : <span id="gender-message"></span></p>
                         </div>
                         <div class="message-display">
-                            <p>Message : </p><br>
+                            <p style="font-weight: bold;">Message : </p>
                             <p><span id="message-container"></span></p>
                         </div>
                     </div>
