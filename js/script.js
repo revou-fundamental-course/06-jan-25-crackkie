@@ -1,3 +1,5 @@
+// slider
+
 let slides = document.getElementsByClassName('image');
 indexSlide = 0;
 
