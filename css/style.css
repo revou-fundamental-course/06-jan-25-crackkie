@@ -61,16 +61,16 @@ header{
     background-position: center;
 }
 .slide1{
-    background-image: url(/assets/img/image4.jpg);
+    background-image: url(/img/image4.jpg);
 }
 .slide2{
-    background-image: url(/assets/img/image2.jpg);
+    background-image: url(/img/image2.jpg);
 }
 .slide3{
-    background-image: url(/assets/img/image3.png);
+    background-image: url(/img/image3.png);
 }
 .slide4{
-    background-image: url(/assets/img/image1.jpg);
+    background-image: url(/img/image1.jpg);
 }
 .image.active{
     display: block;
@@ -412,7 +412,6 @@ footer{
 }
 .footer p{
     text-align: center;
-    padding: ;
     color: #ffffff;
 }
 .social{
