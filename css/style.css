@@ -23,6 +23,10 @@ header{
     justify-content: center;
     z-index: 999;
 }
+.image img{
+    width: 100%;
+    height: 100%;
+}
 .hero{
     height: 100vh;
 }
@@ -61,16 +65,16 @@ header{
     background-position: center;
 }
 .slide1{
-    background-image: url(/img/image4.jpg);
+    /* background-image: url(/img/image4.jpg); */
 }
 .slide2{
-    background-image: url(/img/image2.jpg);
+    /* background-image: url(/img/image2.jpg); */
 }
 .slide3{
-    background-image: url(/img/image3.png);
+    /* background-image: url(/img/image3.png); */
 }
 .slide4{
-    background-image: url(/img/image1.jpg);
+    /* background-image: url(/img/image1.jpg); */
 }
 .image.active{
     display: block;
