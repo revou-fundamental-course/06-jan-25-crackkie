@@ -64,18 +64,7 @@ header{
     background-size: cover;
     background-position: center;
 }
-.slide1{
-    /* background-image: url(/img/image4.jpg); */
-}
-.slide2{
-    /* background-image: url(/img/image2.jpg); */
-}
-.slide3{
-    /* background-image: url(/img/image3.png); */
-}
-.slide4{
-    /* background-image: url(/img/image1.jpg); */
-}
+
 .image.active{
     display: block;
 }
