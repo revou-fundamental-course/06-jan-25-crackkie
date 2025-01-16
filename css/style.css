@@ -99,6 +99,7 @@ header{
 }
 .cta-button {
     text-decoration: none;
+    text-align: center;
     padding: 1rem 2rem;
     background-color: white;
     border-radius: 8px;
@@ -179,25 +180,25 @@ header{
 }
 /* About */
 .about{
-    padding-top: 2rem;
     height: 100vh;
     width: 100%;
-    padding: 2rem;
+    padding: 0 2rem;
     display: grid;
     grid-template-columns: 1.5fr 1fr; 
     grid-row: auto-fit;
     gap: 2rem;
     justify-content: center;
-    align-items: ;
+    align-items: center;
 }
 .profile{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     min-width: 400px;
-    background-color: #242424;
-    padding: ;
+    /* background-color: #242424; */
 }
 .aboutme{
     display: flex;
@@ -207,7 +208,7 @@ header{
     width: 100%;
     height: 100%;
     min-height: 400px;
-    background-color: #1f1f1f;
+    /* background-color: #1f1f1f; */
 }
 .aboutme h1{
     font-size: 2rem;
@@ -251,6 +252,187 @@ header{
     justify-content: center;
     align-items: flex-start;
 }
+/* Skill */
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    height: 100vh;
+}
+.skill h1{
+    text-align: center;
+
+}
+.container-skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 4rem;
+}
+.icon-skill{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+.icon-skill img{
+    width: 100%;
+    height: 100%;
+}
+/* contact */
+.contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+
+}
+.form-box{
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        padding: 1.5rem;
+        background-color: #1f1f1f;
+        border-radius: 8px;
+}
+.form-box p{
+        margin: 0;
+}
+.message-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    min-height: 400px;
+
+}
+.message-box h1,.form-box h1{
+    margin: 0;
+}
+#fname,#fbirth{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    }
+#message{
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    border: none;
+    resize: none;
+    padding: 0.5rem 1rem;
+}
+#submit{
+    width: 100%;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+}
+#submit:hover{
+    background-color: #333;
+    color: white;
+}
+.message-box #time{
+    margin: 0;
+    line-height: 2px;
+    font-size: 0.8rem;
+    line-height: 10px;
+    font-size: 0.7rem;
+    width: 100%;
+}
+.message-display{
+    margin-top: 1rem;
+    padding: 5px;
+    margin: 0;
+    font-weight: 600;
+    background-color: whitesmoke;
+    color: #000000;
+    border-radius: 8px;
+    
+}
+.message-display #message-container{
+    margin: 0;
+}
+.alert{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: red;
+    z-index: 999;
+}
+.doneNotify{
+
+    position: relative;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(0, 154, 0);
+    z-index: 99;
+}
+/* footer */
+.footer{
+    width: 100%;
+    height: 10vh;
+    background-color: aliceblue;
+}
+.footer p{
+    text-align: center;
+    padding: 1rem;
+    color: #ffffff;
+}
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+.social .icon{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+.icon img{
+    width: 100%;
+    height: 100%;
+}
+.refrensi ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
 
 @media (max-width: 480px){
     .slider::after{
@@ -282,9 +464,15 @@ header{
     }
     .about{
         grid-template-columns: 1fr;
-        height: 250vh;
+        height: 200vh;
     }
     .aboutme h2{
         font-size: 2rem;
+    }
+    .form{
+        flex-direction: column;
+    }
+    .contact{
+        height: auto;
     }
 }

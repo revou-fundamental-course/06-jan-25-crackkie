@@ -5,116 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-    <body>
-
-<!-- Header -->
-        <div id="greting-input">
-            <p>Demo version!</p>
-            <h2>Welcome</h2>
-            <h1>What's your name?</h1>
-            <input type="text" id="gretingName">
-            <button class="gretingbutton" id="button-greting">Submit</button>
-        </div>
+<body>
+    <div class="hero" id="hero">
         <header>
-            <!-- header -->
-             <div class="logo">Portofolio</div> <!-- logo -->
-             <nav id="navMenu">
+            <nav class="menu">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Service</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#skill">MySkill</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-             </nav>
-             <button id="hamMenu" onclick="menu()"><img src="/asets/icons/menu-white.svg" alt="" id="hamIcon"></button>
+            </nav>
         </header>
-
-<!-- Main -->
-
-        <main>
-
-    <!-- Section Hero -->
-             <section id="home">
-                 <div class="baner-container" id="baner">
-                     <!-- baner img -->
-                     <img  class="slide" src="./asets/img/image1.jpg" alt="image 1">
-                     <img  class="slide" src="./asets/img/image2.jpg" alt="image 2">
-                     <img  class="slide" src="./asets/img/image3.png" alt="image 3">
-                     <img  class="slide" src="./asets/img/image4jpg.jpg" alt="image 4">
-                    </div>
-                    <header>
-                        <h1>Hallo <span id="greeting-user">User</span>,</h1>
-                        <h2>Let’s Build Your Dream Web Page!</h2>
-                        <p>I am a web developer and web designer. I can help you create your own website.</p>
-                        <a class="cta-button" href="#contact">Let’s Talk!</a>
-                    </header>
-            </section>
-
-    <!-- Section About -->
-            <section id="about" class="about-section">
-                <header>
-                    <h1>About</h1>
-                </header>
-                <div class="about-container">
-                    <div class="about">
-                        <p>Hello! 
-                            I am Ahmad Riyadi, a beginner web developer who started my journey in the world of web development this year after deciding to change careers. With a great interest in technology, I focused on learning HTML, CSS, and JavaScript to build interactive and attractive websites.                        <p>
-                    </div>
-                    <div class="profile">
-                        <div class="img-con">
-                            <img src="./asets/img/profile 1.jpg" alt="">
-                        </div>
-                        <h3>Ahmad Riyadi</h3>
-                        <div class="merge">
-                            <h4>mySkill :</h5>
-                            <div class="icon">
-                                <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="">
-                                <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="">
-                                <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="">
-                            </div>
-                        </div>
-                    </div>
+        <div class="hero">
+            <div class="slider">
+                <div class="image slide1 active"></div>
+                <div class="image slide2"></div>
+                <div class="image slide3"></div>
+                <div class="image slide4"></div>
+            </div>
+            <div class="greeting">
+                    <h4>Hi <span id="user-name">There</span> !</h1>
+                    <h1>I am Ezy </h1>
+                    <p>I am a Web Developer and Freelancer.</p><br>
+                    <br>
+                    <br>
+                    <a href="#about" class="cta-button">Lern More</a>
+            </div>
+            <div class="popup" id="popup">
+                <h2>Welcome</h2>
+                <h1>What is your name?</h1>
+                <input type="text" id="greeting-form">
+                <span id="eror" style="font-size: 12px;"></span>
+                <button id="submit-greeting">Submit</button>
+            </div>
+            <div class="button-slide">
+                <button onclick="changeIndex(-1)" class="button preview">&lt;</button>
+                <button onclick="changeIndex(1)" class=" button next">&gt;</button>
+            </div>
+        </div>
+        
+    <main>
+        <section class="about" id="about">
+            <div class="aboutme">
+                <div class="frame">
+                    <img src="./assets/img/profile1.jpg" alt="">
                 </div>
-                
-            </section>
-
-    <!-- Section Service -->
-            <section id="service" class="service-section">
-                <header>
-                    <!-- Title -->
-                     <h1>Service</h1>
-                </header>
-                <div class="content-service">
-                    <!-- content -->
-                    <div class="content1">
-                        <h2>Web Development</h2>
-                        <p>
-                            Saya membuat website dari awal sesuai kebutuhan Anda, menggunakan teknologi terbaru untuk performa terbaik.
-                            Responsive Design
-                            Semua website saya dirancang agar terlihat sempurna di semua perangkat, dari desktop hingga smartphone.
-                            E-commerce Development
-                            Ingin toko online? Saya dapat membantu Anda membangun platform e-commerce yang mudah digunakan, aman, dan menarik.</p>
-                    </div>
-                   
+                <div class="wrap">
+                    <h2>Hello,</h2>
+                    <h3><span class="iam">I am</span> Ahmad Riyadi</h3>
                 </div>
-            </section>
+            </div>
+            <div class="profile">
+                <h1>About me</h1>
+                <p>Hi there! I’m a budding web developer passionate about creating engaging and effective web experiences. Currently, I focus on building visually appealing and user-friendly landing pages. With a strong interest in technology, I’m dedicated to continuously learning and improving my skills in HTML, CSS, and JavaScript.
+                    I believe great web design is not just about aesthetics but also about delivering a seamless user experience. If you’re looking for someone who is enthusiastic, committed, and eager to grow alongside your project, let’s connect!.</p>
+                <a href="contact" class="cta-button">ContactMe</a>
+            </div>
+        </section>
 
-    <!-- Section Contact -->
-            <section id="contact" class="contact-section">
-                <header>
-                    <!-- Title -->
-                    <h1>Contact</h1>
-                </header>
-                <div class="alert" id="alert"></div>
-                <div class="doneNotify" id="doneNotify"></div>
-                <div class="contact-container">
-                    <!-- content -->
-                    <div class="form-box">
+        <section class="skill" id="skill">
+            <div class="container-skill">                <h1>My Skill</h1>
+                <div class="icon-container">
+                    <div class="icon-skill"><img src="./assets/icons/html(1).png" alt=""></div>
+                    <div class="icon-skill"><img src="./assets/icons/css-3(1).png" alt=""></div>
+                    <div class="icon-skill"><img src="./assets/icons/js.png" alt=""></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="form">
+                <div class="form-box">
+                    <div class="alert" id="alert"></div>
+                    <div class="doneNotify" id="doneNotify"></div>
                         <h1>Form Box</h1>
                         <form>
                             <label for="fname">Nama :</label>
@@ -137,30 +104,38 @@
                     </div>
                     <div class="message-box">
                         <h1>Message Box</h1>
-                        <div id="time"></div>
+                        <p id="time"></p>
                         <div class="message-display">
                             <p>Name : <span id="name-message"></span></p>
                             <p>Date of birth : <spann id="birth-message"></spann></p>
                             <p>Gender : <span id="gender-message"></span></p>
                         </div>
                         <div class="message-display">
-                            <p style="font-weight: bold;">Message : </p>
+                            <p>Message : </p>
                             <p><span id="message-container"></span></p>
                         </div>
-                    </div>
-                </div>
-            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="social">
+            <div class="icon"><a href="https://www.instagram.com/ahmdr14_/" target="_blank"><img src="./assets/icons/instagram.svg" alt=""></a></div>
+            <div class="icon"><a href="https://www.facebook.com/profile.php?id=61571301022265" target="_blank"><img src="./assets/icons/facebook.svg" alt=""></a></div>
+            <div class="icon"><a href="https://www.linkedin.com/in/ahmad-r-a28603340/" target="_blank"><img src="./assets/icons/linkedin.svg" alt=""></a></div>
+            <div class="icon"><a href="https://www.threads.net/@ahmdr14_" target="_blank"><img src="./assets/icons/threads.png" alt=""></a></div>
+        </div>
+        <div class="refrensi">
+            <ul>
+                <li><a href="https://feathericons.com/" title="feather-icons">Feather Icons</a>
 
-             
-        </main>
+                <li><a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a></li>
 
-<!-- Footer  -->
+                <li><a href="https://www.flaticon.com/free-icons/css-3" title="css 3 icons">Css 3 icons created by Freepik - Flaticon</a></li>
 
-        <footer>
-            <!-- footer -->
-             <p>Copyright . 2025</p>
-        </footer>
-    
-        <script src="./js/script.js"></script>
-    </body>
+                <li><a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a></li>
+            </ul>
+        </div>
+            <p>Copyright.2025</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
 </html>
