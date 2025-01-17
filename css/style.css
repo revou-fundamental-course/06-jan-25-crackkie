@@ -12,6 +12,9 @@ body{
 main{
     padding: 2rem;
 }
+section{
+    margin: 0;
+}
 
 /* hero */
 
